@@ -1,0 +1,51 @@
++<--------------------------------------------------------------------------------------------------!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    <center>
+        <h1>Lascador, lascado, lasquinha</h1>
+
+        <p>Nome: <input type="text" name="nome" id="inome" placeholder="Digite seu nome"></p>
+        <br>
+        <p>Sobrenome: <input type="text" name="nome" id="inome" placeholder="Digite seu sobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+
+        <br><br>
+        <h1>Validação</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="main.js" method="get">
+                <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu nome" minlength="10" maxlength="40" required name="nome"></p>
+                <br>
+                <p>
+                    <label for="isobrenome"> Sobrenome</label>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" minlength="10" maxlength="40" required name="sobrenome">            
+                 </p>
+                 <br>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu email" minlength="10" maxlength="40" required name="email">      
+                <p>
+                <br>
+                <label for="inumero">Numero:</label>
+                <input type="number" name="numero" id="inumero" placeholder="Digite seu numero" minlength="10" maxlength="40" required name="numero">
+                           
+            </p>  
+            <p>
+            <br>
+            <label for="idata">Data:</label>
+            <input type="date" name="data" id="idata" placeholder="Digite a data" minlength="10" maxlength="40" required data="data">
+
+            <input type="submit" value="Enviar">
+            </p>
+                
+                </form>
+        </fieldset>
+
+    </center>
+</body>
+</html>
